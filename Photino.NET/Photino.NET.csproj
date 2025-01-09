@@ -7,13 +7,14 @@
 		<GenerateNuspecDependsOn>$(GenerateNuspecDependsOn);SetPackageVersion</GenerateNuspecDependsOn>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<PackageDescription>.NET 6/7/8 app that opens native OS windows hosting web UI on Windows, Mac, and Linux (without Blazor support)</PackageDescription>
-		<PackageId>Photino.NET</PackageId>
+		<PackageId>Flyingpie.Photino.NET</PackageId>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<Product>Photino.NET</Product>
 		<PackageProjectUrl>https://github.com/tryphotino/photino.NET</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/tryphotino/photino.NET</RepositoryUrl>
 		<Title>Photino.NET</Title>
 		<RootNamespace>Photino.NET</RootNamespace>
+		<PackageVersion>4.0.0-pre1</PackageVersion>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -27,12 +28,11 @@
 	
 	<Target Name="SetPackageVersion" DependsOnTargets="Build">
 		<PropertyGroup>
-			<PackageVersion>$(Version)</PackageVersion>
 		</PropertyGroup>
 	</Target>
 
   <ItemGroup>
-    <PackageReference Include="Photino.Native" Version="3.2.3" />
+    <PackageReference Include="Flyingpie.Photino.Native" Version="4.0.0-pre1" />
   </ItemGroup>
 
 </Project>
